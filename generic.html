@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Nosotros</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+				<div id="header-container"></div>
+				<script>
+					fetch('Header.html')
+					  .then(res => res.text())
+					  .then(data => {
+						document.getElementById('header-container').innerHTML = data;
+					  });
+				  </script>
+				
+				<!-- Menu -->
+				<nav id="menu">	
+					<h2>Menu</h2>
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="elements.html">Acerca de</a></li>
+						<li><a href="generic.html">Nosotros</a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div class="inner">
+					<h1>Nosotros</h1>
+					<p>
+						Somos una comunidad de educadores, desarrolladores y expertos en IA comprometidos con hacer del conocimiento una herramienta accesible para todos. Sabemos que la tecnología no solo cambia industrias, también transforma vidas, y por eso creamos cursos prácticos, interactivos y adaptados a distintos niveles.
+					  </p>
+					  <p>
+						Nuestra plataforma utiliza algoritmos inteligentes para adaptarse a tu ritmo, identificar tus fortalezas y ayudarte a superar tus desafíos. Ya sea que estés iniciándote en programación, buscando especializarte en ciencia de datos o explorando el potencial de la IA, aquí encontrarás recursos diseñados para impulsar tu crecimiento.
+					</p>
+					</div>
+				 </div>
+
+					<div id="footer-container"></div>
+					  <script>
+						fetch('Footer.html')
+						  .then(res => res.text())
+						  .then(data => {
+							document.getElementById('footer-container').innerHTML = data;
+						  });
+					  </script>
+			</div>
+	</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Aprendizaje con IA</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<div id="header-container"></div>
+				<script>
+				   fetch('Header.html')
+					 .then(res => res.text())
+					 .then(data => {
+					   document.getElementById('header-container').innerHTML = data;
+					 });
+				 </script>
+				<!-- Menu -->		
+				<nav id="menu">	
+					<h2>Menu</h2>
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="elements.html">Acerca de</a></li>
+						<li><a href="generic.html">Nosotros</a></li>
+					</ul>
+				</nav>		 
+					<h1>Acerca de</h1>
+					<div class="video">
+					<video width="20%" height="20%" controls>
+					<source src="images/vdurbi.mp4" type="video/mp4">
+					</div>
+					<p>En el presente sitio web se va a mostrar información sobre el proyecto de aprendizaje con IA.</p>
+					</div>
+					<div id="main">
+						<p>
+							Esta iniciativa surge a partir de la experiencia de estudiantes universitarios que identificaron la necesidad de una plataforma innovadora, diseñada específicamente para ayudarles a resolver problemas concretos y bien definidos de manera rápida, eficiente y accesible.
+						  </p>
+						  <p>
+							A partir de sus vivencias académicas, se detectó una oportunidad de crear un espacio que no solo ofreciera soluciones prácticas, sino que también fomentara el aprendizaje autónomo y colaborativo.
+				          </p>
+					</div>
+
+
+				<!-- Footer -->
+
+				<div id="footer-container"></div>		
+				<script>
+					fetch('Footer.html')
+					  .then(res => res.text())
+					  .then(data => {
+						document.getElementById('footer-container').innerHTML = data;
+					  });
+				  </script>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
